@@ -6,6 +6,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" media="screen">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -13,9 +14,9 @@
   <body class="bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-10">
+        <div class="col-9">
           <div class="jumbotron mt-3 bg-white">
-            <p><a href="index.html" class="text-secondary">< Return to previous page</p></a>
+            <p><a href="index.html" class="text-secondary">< Return to previous page</a></p>
              <h1 class="display-5">Please Locate Your Bill</h1>
              <hr class="my-4" />
              <p class="font-weight-bold">Personal Property Tax</p>
@@ -28,50 +29,40 @@
                  </a>
                <div class="collapse" id="collapseExample">
                  <div class="card card-body" style="background-color:#d9edf7">
-                   <span class="font-weight-bold" style="color:rgb(54, 96, 146)"">If you do not know your parcel ID, please follow the link provided to search for your address.</span>
-                   <a href="https://plymouth.patriotproperties.com/default.asp">https://plymouth.patriotproperties.com/default.asp</a>
+                   <span style="color:rgb(54, 96, 146)">Please enter your information into <span class="font-weight-bold">only one</span> of the fields below, submit and scroll down to view search results. For best results, enter a partial description (i.e. 123 Main rather than 123 Main Street or Doe rather than John Doe), where supported.</span>
                  </div>
                </div>
              <form class="mt-5">
                <div class="form-row">
                  <div class="form-group col-md-4">
-                   <label for="inputEmail4">Bill Number (optional)</label>
-                   <input type="email" class="form-control" id="inputEmail4" placeholder="Bill Number">
+                   <label for="inputEmail4">Account Number (optional)</label>
+                   <input type="email" class="form-control" id="inputEmail4" placeholder="Account Number">
                  </div>
                  <div class="form-group col-md-4">
-                   <label for="inputPassword4">Parcel ID (optional)</label>
-                   <input type="password" class="form-control" id="inputPassword4" placeholder="Parcel ID">
+                   <label for="inputPassword4">Property Address (optional)</label>
+                   <input type="password" class="form-control" id="inputPassword4" placeholder="Property Address">
                  </div>
                </div>
              </form>
              <p class="lead">
-               <a class="btn" style="background-color: #1b4170" href="#" role="button"
-                 ></i>    <span class = "text-white">    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+               <a class="btn" style="background-color: #1b4170" href="#" role="button"><span class = "text-white">    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                    </svg> Search Invoices</span></a
                >
              </p>
            </div>
         </div>
-        <div class="col-2">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <div class="col-3 mt-5">
+          <p class="font-weight-bold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+          </svg> Need Help?</p>
+          <p class="h6">You may reach us at (508) 747-1620 Ext: 10291.
+            You may email your questions to </p>
+            <a href="#">collector@plymouth-ma.gov.</a>
+          <button class="pilly text-white mt-2" style="background-color: #8492a2;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+          </svg> Email Us</button>
         </div>
-       </div>
-       <div>
-        
-
-The Town of Plymouth offers an easy and convenient way to view and pay bills online and is excited to expand payment options to include 24/7 phone payments and pay by text.
-
-New! Pay by Phone - Make a payment (credit/debit card or e-check) by phone or check your account balance 24/7 with our automated phone service. Call 855-985-1126.
-
-Pay by Text - Sign up to receive text notifications about your bills and then have the option to make a payment via text message using the default payment method. Click here to watch an overview or click here to learn how to register.
-
-Now accepting PayPal products and Venmo!
-
-This is a fee based service. The fee for an e-check payment is $0.40 for any type of bill. The credit/debit card, PayPal products and Venmo fee for water bills is 2.95%, for sanitation bills $1.95 and for tax bills is 2.95% with a minimum of $1.00. Phone payments for any bill type are an additional $.95.
-
-       </div>
-      </div>
   </body>
 </html>
 
